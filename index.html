@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            width: 80%;
+            height: 700px;
+            margin: auto;
+        }
+        #image1{
+            width: 100%;
+            height: 500px;
+        }
+        h1{
+            text-align: center;
+            background-color: #32cd33;
+        }
+    </style>
+
+</head>
+<body>
+
+    <script>
+        var image=["/ss1.jpg", "/ss2.jpg", "/ss4.jpg", "/tour.jpg", "../BOOTSTRAP 1/slide1.jpg", "../BOOTSTRAP 1/slide2.jpg"];
+        var i=0;
+
+        function slides(){
+                document.getElementById("image1").src=image[i];
+                if(i<(image.length-1))
+                i++;
+                else
+                i=0;
+        }
+        setInterval(slides, 2000)
+    </script>
+
+    <div class="container">
+        <h1>IMAGE SLIDE SHOW USING HTML & Js</h1>
+
+        <hr>
+
+        <img src="/ss1.jpg" alt="ajaz" id="image1">
+        <img src="../BOOTSTRAP 1/" alt="">
+    
+    </div>
+</body>
+</html>
